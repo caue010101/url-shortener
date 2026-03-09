@@ -1,8 +1,7 @@
-🔗 URL Shortener API
+🔗 URL Shortener 
 
 API REST desenvolvida em .NET 8 para encurtamento de URLs com foco em alta performance e redirecionamento eficiente.
 
-Este projeto foi criado para demonstrar o uso de Dapper em cenários de alta leitura e a implementação de algoritmos de geração de identificadores únicos.
 🚀 Tecnologias Utilizadas
 
     .NET 8 (ASP.NET Core)
@@ -11,13 +10,11 @@ Este projeto foi criado para demonstrar o uso de Dapper em cenários de alta lei
 
     Dapper (Micro-ORM)
 
-    Injeção de Dependência Native
-
     Swagger/OpenAPI
 
 📌 Funcionalidades
 
-    Encurtamento de URL: Recebe uma URL longa e gera um código único de 8 caracteres.
+    Encurtamento de URL: Recebe uma URL longa e gera um código único de 6 caracteres.
 
     Redirecionamento: Ao acessar o endpoint com o código, o usuário é redirecionado (302 Found) para a URL original.
 
@@ -26,8 +23,6 @@ Este projeto foi criado para demonstrar o uso de Dapper em cenários de alta lei
     Thread-Safe: Lógica de geração de códigos preparada para múltiplas requisições simultâneas.
 
 🏗️ Estrutura do Projeto
-
-O projeto utiliza o Repository Pattern para desacoplar a lógica de acesso a dados:
 
     Controllers → Gerencia os endpoints de POST (criar) e GET (redirecionar).
 
